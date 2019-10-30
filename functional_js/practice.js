@@ -1,1 +1,3 @@
- // foreach array traversing and filter is done
+ // creating our own map function
+ 
+ 
