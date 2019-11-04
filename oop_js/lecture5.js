@@ -1,42 +1,19 @@
-// bind,call and apply method in Javascipt
+ 
+// bind,call,apply
 
-
-function printMe(){
-    console.log('HEllow',this.name);
+function Person(roll){
+    console.log(this.name,roll);
+    
 }
 var obj={
-    name:'Rahi chowdory',
-    age:22,
+    name:'Rahi CHowdory',
 }
-var obj2={
-    name:'Imran Hasan',
-    email:'rahi@gmail.com',
-}
-//bind
-// printMe.bind(obj)();
-// var rahi=printMe.bind(obj2);
-// rahi();
- 
-printMe.call(obj); //with call method we can direct call
 
-function Add(a,b){
-    return (a+b)*this.c;
-}
-var o={
-    c:10,
-}
-var o1={
-    c:11,
-}
-var r=Add.apply(o,[10,10]); //when 'apply' then we have to give parameter as array
-console.log(r);
-var r1=Add.call(o,10,10);  // call will directly call the function with the object
-console.log(r1);
-var r2=Add.bind(o);      //bind with return the function ,we have to call that function
-console.log(r2(10,10));
+var binded=Person.bind(obj,123)(); //bind will add the object with the function and retern the function
 
+var called=Person.call(obj,123);  //call will add the object with the function and direct call/parameter=(coma,)
 
-
+var applyed=Person.apply(obj,[123])  //apply with ad the object with the function and direct call,parameter=[as a array]
 
 
  
