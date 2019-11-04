@@ -82,7 +82,6 @@ var person={
         }.bind(this),2000) // this allways refer whole window when it in a function,  
     }                       //for these we need to add bind method to recognize the object
 }
-
 //this => when it use in function it will refer window or as global, but if in method or objects'properties then 
 //it will refer that object from where we are calling
 //this only work in object
