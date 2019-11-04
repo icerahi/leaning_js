@@ -1,5 +1,5 @@
  
-// this and bind
+// prototype with contructor function (classs)
  
  
 
