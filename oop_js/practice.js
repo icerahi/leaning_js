@@ -1,4 +1,5 @@
  
-// inheritance in Javascript
+// __proto__ vs prototype
+
 
  
