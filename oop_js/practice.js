@@ -1,3 +1,4 @@
  
-// bind,call,apply
+// inheritance in Javascript
 
+ 
