@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" oncontextmenu="return false">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+    <title></title>
+  </head>
+  <body>
+
+    <h1 id='username'>Learning ES6</h1>
+    <input type="text" placeholder="What is your name?" id='name'>
+    <button id='submit'>Submit</button>
+
+   <div id='content'></div>
+    
+   <script>
+
+      let submit=document.querySelector('#submit')
+       submit.addEventListener('click',(event)=>{
+         var value=document.getElementById('name').value;
+         console.log(value);
+         document.getElementById('username').innerText=value;
+         
+      })
+
+   </script>
+
+    <script src="bundle.js">
+    </script>
+  </body>
+</html>
