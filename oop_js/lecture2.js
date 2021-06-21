@@ -1,6 +1,7 @@
 /// object oriented programming in OOp (basic class)
 // javascript e class nei amader baniye nite hobe
 
+
 //construction partern 
 
 function Person(name,email){
